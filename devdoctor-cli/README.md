@@ -18,13 +18,13 @@ It helps you **analyze projects, fix errors, run tests, lint code, and generate 
 ## Installation
 
 ```bash
-npm install -g devdoctor-cli
+npm install -g devdoctor.js
 ```
 
 or clone and run locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/devdoctor-cli.git
+git clone https://github.com/KhairyK/devdoctor-cli.git
 cd devdoctor-cli
 npm install
 ```
