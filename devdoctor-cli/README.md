@@ -18,7 +18,7 @@ It helps you **analyze projects, fix errors, run tests, lint code, and generate 
 ## Installation
 
 ```bash
-npm install -g devdoctor.js
+npm install -g devdoctor-js
 ```
 
 or clone and run locally:
