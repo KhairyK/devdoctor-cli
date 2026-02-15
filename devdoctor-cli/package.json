@@ -1,9 +1,21 @@
 {
-  "name": "devdoctor.js",
-  "version": "1.0.0",
-  "description": "Doctor for project.",
+  "name": "devdoctor-js",
+  "version": "0.1.0",
+  "description": "CLI tool to diagnose and fix problems in Node.js projects.",
   "keywords": [
-    "doctor"
+    "cli",
+    "doctor",
+    "diagnostic",
+    "health-check",
+    "project-check",
+    "developer-tools",
+    "dev-tools",
+    "node",
+    "javascript",
+    "dependency-check",
+    "project-analyzer",
+    "code-quality",
+    "automation"
   ],
   "license": "Apache-2.0",
   "author": "OpenDN Foundation",
@@ -11,15 +23,42 @@
   "main": "bin/doctor.js",
   "scripts": {
     "copilot:test": "copilot -p 'Hi'",
-    "install": "npm install",
+    "add:dependencies": "npm install",
     "add:pnpm": "npm install -g pnpm",
     "add:yarn": "npm install -g yarn",
-    "dev": "npx nodemon"
+    "dev": "npx nodemon",
+    "lint": "npx eslint .",
+    "format:check": "npx prettier --check .",
+    "format:write": "npx prettier --write .",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
   },
   "bin": {
     "doctor": "./bin/doctor.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": "^18 || >=20"
+  },
+  "engineStrict": true,
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/Khairy47"
+  },
+  "repository": {
+    "type": "github",
+    "url": "git+https://github.com/KhairyK/devdoctor-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/KhairyK/devdoctor-cli/issues"
+  },
+  "homepage": "https://opendnf.cloud/devdoctor-cli",
+  "private": false,
   "dependencies": {
+    "@github/copilot": "^0.0.410",
     "chalk": "^5.6.2",
     "commander": "^14.0.3",
     "eslint": "^10.0.0",
@@ -27,9 +66,16 @@
     "fs-extra": "^11.3.3",
     "jest": "^30.2.0",
     "mocha": "^11.3.0",
-    "ora": "^9.3.0"
+    "ora": "^9.3.0",
+    "prettier": "^3.8.1"
   },
   "devDependencies": {
+    "eslint": "^10.0.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "prettier-eslint": "16.4.2",
+    "prettier-eslint-cli": "8.0.1",
+    "jest": "^30.2.0",
     "nodemon": "^3.1.11"
   }
 }
